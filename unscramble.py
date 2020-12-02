@@ -119,13 +119,9 @@ class Window:
             
             def infoenter(event):
                 self.c.itemconfig(infoBtn, fill='blue')
-                self.c.move(infoBtn, 1, -1)
-                self.c.move(infoTxt, 1, -1)
                 
             def infoleave(event):
                 self.c.itemconfig(infoBtn, fill=from_rgb(0, 68, 136))
-                self.c.move(infoBtn, -1, 1)
-                self.c.move(infoTxt, -1, 1)
             
             infoBtn = round_rect(10, 675, 160, 735, fill=from_rgb(0, 68, 136))
             infoTxt = self.c.create_text(85, 707, text='Info', font='helvetica 48', fill='white')
@@ -140,14 +136,10 @@ class Window:
             
             def exitenter(event):
                 self.c.itemconfig(exitBtn, fill='blue')
-                self.c.move(exitBtn, 1, -1)
-                self.c.move(exitTxt, 1, -1)
-                
+                                
             def exitleave(event):
                 self.c.itemconfig(exitBtn, fill=from_rgb(0, 68, 136))
-                self.c.move(exitBtn, -1, 1)
-                self.c.move(exitTxt, -1, 1)
-            
+                            
             exitBtn = round_rect(1135, 675, 1295, 735, fill=from_rgb(0, 68, 136))
             exitTxt = self.c.create_text(1215, 707, text='Exit', font='helvetica 48', fill='white')
             self.c.tag_bind(exitBtn, '<ButtonPress-1>', quit)
@@ -161,13 +153,9 @@ class Window:
             
             def uscenter(event):
                 self.c.itemconfig(uscBtn, fill='blue')
-                self.c.move(uscBtn, 1, -1)
-                self.c.move(uscTxt, 1, -1)
                 
             def uscleave(event):
                 self.c.itemconfig(uscBtn, fill=from_rgb(0, 68, 136))
-                self.c.move(uscBtn, -1, 1)
-                self.c.move(uscTxt, -1, 1)
             
             uscBtn = round_rect(400, 365, 890, 455, fill=from_rgb(0, 68, 136))
             uscTxt = self.c.create_text(640, 415, text='Unscramble', font='helvetica 65', fill='white')
@@ -227,13 +215,10 @@ class Window:
             
             def infoenter(event):
                 self.c.itemconfig(infoBtn, fill='blue')
-                self.c.move(infoBtn, 1, -1)
-                self.c.move(infoTxt, 1, -1)
                 
             def infoleave(event):
                 self.c.itemconfig(infoBtn, fill=from_rgb(0, 68, 136))
-                self.c.move(infoBtn, -1, 1)
-                self.c.move(infoTxt, -1, 1)
+
             
             infoBtn = round_rect(10, 675, 160, 735, fill=from_rgb(0, 68, 136))
             infoTxt = self.c.create_text(85, 707, text='Info', font='helvetica 48', fill='white')
@@ -248,13 +233,11 @@ class Window:
             
             def exitenter(event):
                 self.c.itemconfig(exitBtn, fill='blue')
-                self.c.move(exitBtn, 1, -1)
-                self.c.move(exitTxt, 1, -1)
+                
                 
             def exitleave(event):
                 self.c.itemconfig(exitBtn, fill=from_rgb(0, 68, 136))
-                self.c.move(exitBtn, -1, 1)
-                self.c.move(exitTxt, -1, 1)
+                
             
             exitBtn = round_rect(1135, 675, 1295, 735, fill=from_rgb(0, 68, 136))
             exitTxt = self.c.create_text(1215, 707, text='Exit', font='helvetica 48', fill='white')
@@ -276,13 +259,11 @@ class Window:
             
             def uscenter(event):
                 self.c.itemconfig(uscBtn, fill='blue')
-                self.c.move(uscBtn, 1, -1)
-                self.c.move(uscTxt, 1, -1)
+                
                 
             def uscleave(event):
                 self.c.itemconfig(uscBtn, fill=from_rgb(0, 68, 136))
-                self.c.move(uscBtn, -1, 1)
-                self.c.move(uscTxt, -1, 1)
+                
             
             uscBtn = round_rect(945, 30, 1295, 90, fill=from_rgb(0, 68, 136))
             uscTxt = self.c.create_text(1122, 60, text='Unscramble', font='helvetica 48', fill='white')
